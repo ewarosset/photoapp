@@ -4,17 +4,19 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    border: 3px solid transparent;
 }
 
 .thumbnails img
 {
-    width: 20%;
+    width: 25%;
     padding: 1px;
+    border: 3px solid transparent;
 }
 
 .thumbnails img:hover
 {
-    border: 1px solid yellow;
+    border-color:yellow;
 }
 
 .thumbnails{
@@ -26,7 +28,9 @@
 }
 
 .selectImage{
-    display: flex;
-    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    border: 3px solid transparent;
 }
 
