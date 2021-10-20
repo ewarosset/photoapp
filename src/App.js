@@ -1,25 +1,21 @@
 import logo from './logo.svg';
+import doggo from './dog-food.jpg'
 import './App.css';
+import {PhotoViewer} from "./PhotoViewer/PhotoViewer";
+import {imageUrls} from "./PhotoViewer/getImages"
+import React from "react";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div>
+                <h1 className="websiteHeader">React Photo Viewer</h1>
+                <PhotoViewer/>
+            </div>
+        </div>
+
+    );
 }
 
 export default App;
