@@ -23,7 +23,7 @@ test('test image url generation contains random image', () => {
 
 test('set Image function changes the image', () =>{
 
-  render(<App />);
+  render(<PhotoViewer />);
 
   fireEvent.click(screen.getByAltText('https://picsum.photos/id/602/1600/900.jpg'));
 
