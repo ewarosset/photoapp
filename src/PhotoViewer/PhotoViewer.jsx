@@ -7,8 +7,6 @@ export function PhotoViewer() {
 
     const [currentImage, setImage] = useState("https://picsum.photos/id/600/1600/900.jpg")
 
-    
-
     return (
         <div>
             <img className="mainPhoto" alt='mainPic' src={currentImage}/>
@@ -20,8 +18,7 @@ export function PhotoViewer() {
                 {imageUrls.map((image, index) => (
                     
                     <img src={image} alt={image} onClick={() => setImage(image)}/>
-                ))
-                }
+                ))}
             </div>
         </div>
     );

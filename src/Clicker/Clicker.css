@@ -1,0 +1,51 @@
+﻿.buttonArea{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.myButton {
+    box-shadow: inset 0px 34px 0px -15px #b54b3a;
+    background-color: #a73f2d;
+    border: 1px solid #241d13;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial, serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 23px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #7a2a1d;
+    width: 50%;
+    
+}
+
+.myButton:hover {
+    background-color: #b34332;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.clickNumber{
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    width: 50%;
+}
+.clickNumber:focus {
+    outline:none;
+}
