@@ -8,14 +8,14 @@ import React, {useEffect} from "react";
 import { hotjar } from 'react-hotjar';
 
 
-const hotjarTest = () => {
-    hotjar.identify('USER_ID', { userProperty: 'value' });
-    hotjar.event('test-button');
-    hotjar.stateChange('/my/page');
-};
+// const hotjarTest = () => {
+//     hotjar.identify('USER_ID', { userProperty: 'value' });
+//     hotjar.event('test-button');
+//     hotjar.stateChange('/my/page');
+// };
 
 function App() {
-    
+
     useEffect(() => {
         hotjar.initialize(2813391, 6);
     }, []);
@@ -27,7 +27,8 @@ function App() {
                 <Clicker/>
                 <button
                     type="button"
-                    onClick={hotjarTest}
+                    className="myButton"
+                    // onClick={hotjarTest}
                 />
             </div>
         </div>
