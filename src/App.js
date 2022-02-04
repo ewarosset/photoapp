@@ -6,7 +6,9 @@ import {Clicker} from "./Clicker/Clicker";
 import {imageUrls} from "./PhotoViewer/getImages"
 import React, {useEffect} from "react";
 import { hotjar } from 'react-hotjar';
-
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Homepage from "./Pages/Homepage/Homepage";
+import TestPage from "./Pages/Page2/TestPage";
 
 // const hotjarTest = () => {
 //     hotjar.identify('USER_ID', { userProperty: 'value' });
@@ -20,19 +22,12 @@ function App() {
         hotjar.initialize(2813391, 6);
     }, []);
     return (
-        <div className="App">
-            <div>
-                <h1 className="websiteHeader">React Photo Viewer</h1>
-                <PhotoViewer/>
-                <Clicker/>
-                <button
-                    type="button"
-                    className="myButton"
-                    // onClick={hotjarTest}
-                />
-            </div>
-        </div>
-
+        <Router>
+            <Routes>
+                <Route path="photoapp" element={<Homepage/>}/>
+                <Route path="otherpage" element={<TestPage/>}/>
+            </Routes>
+        </Router>
     );
 }
 
