@@ -21,6 +21,7 @@ function App() {
     useEffect(() => {
         hotjar.initialize(2813391, 6);
     }, []);
+
     return (
         <Router>
             <Routes>

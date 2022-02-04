@@ -5,6 +5,10 @@ import {Clicker} from "../../Clicker/Clicker";
 
 function Test() {
 
+    useEffect(() => {
+        hotjar.initialize(2813391, 6);
+    }, []);
+
     return (
         <div className="App">
             <div>
