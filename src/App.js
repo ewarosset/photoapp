@@ -32,7 +32,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="photoapp" element={<Homepage/>}/>
+                <Route path="" element element={<Homepage/>}/>
                 <Route path="otherpage" element={<TestPage/>}/>
             </Routes>
         </Router>

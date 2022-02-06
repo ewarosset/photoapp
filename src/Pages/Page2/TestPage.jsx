@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import {hotjar} from "react-hotjar";
 import {PhotoViewer} from "../../PhotoViewer/PhotoViewer";
 import {Clicker} from "../../Clicker/Clicker";
+import {Link} from "react-router-dom";
 
 function Test() {
 
@@ -10,14 +11,14 @@ function Test() {
     }, []);
 
     return (
-        <div className="App">
+        <div>
             <div>
                 <Clicker/>
                 <button
                     type="button"
                     className="myButton"
-                    // onClick={hotjarTest}
                 />
+                <Link to="/" className={"myButton"}/>
             </div>
         </div>
 
