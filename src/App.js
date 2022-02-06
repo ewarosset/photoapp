@@ -19,12 +19,14 @@ import ReactGA from 'react-ga';
 
 function App() {
 
+    ReactGA.initialize('UA-219300525-2');
+
     useEffect(() => {
         hotjar.initialize(2813391, 6);
     }, []);
 
     useEffect(() => {
-        ReactGA.initialize('UA-219300525-2');
+        ReactGA.pageview(window.location.pathname + window.location.search);
     }, []);
 
     return (
