@@ -3,12 +3,9 @@ import {hotjar} from "react-hotjar";
 import {PhotoViewer} from "../../PhotoViewer/PhotoViewer";
 import {Clicker} from "../../Clicker/Clicker";
 import {Link} from "react-router-dom";
+import ReactGA from "react-ga";
 
 function Test() {
-
-    useEffect(() => {
-        hotjar.initialize(2813391, 6);
-    }, []);
 
     return (
         <div>
