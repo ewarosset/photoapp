@@ -2,7 +2,6 @@
   "name": "photoapp",
   "version": "0.1.0",
   "homepage": "https://ewarosset.github.io/photoapp",
-  "otherpage": "https://ewarosset.github.io/otherpage",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
