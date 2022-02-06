@@ -6,7 +6,7 @@ import {Clicker} from "./Clicker/Clicker";
 import {imageUrls} from "./PhotoViewer/getImages"
 import React, {useEffect} from "react";
 import { hotjar } from 'react-hotjar';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import Homepage from "./Pages/Homepage/Homepage";
 import TestPage from "./Pages/Page2/TestPage";
 import ReactGA from 'react-ga';
