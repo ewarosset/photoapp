@@ -9,6 +9,7 @@ import { hotjar } from 'react-hotjar';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Homepage from "./Pages/Homepage/Homepage";
 import TestPage from "./Pages/Page2/TestPage";
+import ReactGA from 'react-ga';
 
 // const hotjarTest = () => {
 //     hotjar.identify('USER_ID', { userProperty: 'value' });
@@ -20,6 +21,10 @@ function App() {
 
     useEffect(() => {
         hotjar.initialize(2813391, 6);
+    }, []);
+
+    useEffect(() => {
+        ReactGA.initialize('UA-219300525-2');
     }, []);
 
     return (
