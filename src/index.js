@@ -6,6 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import {HashRouter} from "react-router-dom";
 import {Helmet, HelmetProvider} from "react-helmet-async";
 
+const hotJar = `(function(h,o,t,j,a,r){
+                  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                  h._hjSettings={hjid:2813391,hjsv:6};
+                  a=o.getElementsByTagName('head')[0];
+                  r=o.createElement('script');r.async=1;
+                  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                  a.appendChild(r);
+              })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`;
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,6 +21,9 @@ ReactDOM.render(
           <Helmet>
               <script type="text/javascript" charSet="UTF-8"
                       src="//cdn.cookie-script.com/s/734d039edba9d0ec7bfa6cf3e7f8d521.js">
+              </script>
+              <script>
+                  {hotJar}
               </script>
           </Helmet>
           <HashRouter>

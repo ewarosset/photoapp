@@ -17,17 +17,15 @@ function usePageViews() {
     }, [location]);
 }
 
-const cookie = <script type="text/javascript" charSet="UTF-8"
-                       src="//cdn.cookie-script.com/s/734d039edba9d0ec7bfa6cf3e7f8d521.js"></script>
 
 function App() {
 
     // ReactGA.initialize('UA-219300525-2');
 
 
-    useEffect(() => {
-        hotjar.initialize(2813391, 6);
-    }, []);
+    // useEffect(() => {
+    //     hotjar.initialize(2813391, 6);
+    // }, []);
 
     usePageViews();
 
