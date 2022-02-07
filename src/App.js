@@ -11,21 +11,25 @@ function usePageViews() {
     let location = useLocation();
     useEffect(() => {
         ReactGA.initialize('UA-219300525-2');
-        ReactGA.set({ page: location.pathname });
-        ReactGA.pageview(location.pathname);
+        // ReactGA.set({ page: location.pathname });
+        // ReactGA.pageview(location.pathname);
+        ReactGA.pageview(window.location.pathname + window.location.search);
     }, [location]);
 }
+
+const cookie = <script type="text/javascript" charSet="UTF-8"
+                       src="//cdn.cookie-script.com/s/734d039edba9d0ec7bfa6cf3e7f8d521.js"></script>
 
 function App() {
 
     // ReactGA.initialize('UA-219300525-2');
+
 
     useEffect(() => {
         hotjar.initialize(2813391, 6);
     }, []);
 
     usePageViews();
-
 
     return (
         <Routes>

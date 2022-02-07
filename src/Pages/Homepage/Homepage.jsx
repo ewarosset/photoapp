@@ -5,15 +5,15 @@ import {Clicker} from "../../Clicker/Clicker";
 import {Link, useNavigate} from "react-router-dom";
 import ReactGA from "react-ga";
 
-function Homepage() {
+export const ClickHandlerEvent = () => {
+    ReactGA.event({
+        category: "Button",
+        action: "Click",
+        label: "key event"
+    })
+    alert("send the information to GA")}
 
-    const ClickHandler = () => {
-        ReactGA.event({
-            category: "Button",
-            action: "Click"
-        })
-        alert("send the information to GA")
-    }
+function Homepage() {
 
     const navigate = useNavigate()
 
@@ -22,14 +22,16 @@ function Homepage() {
             <div>
                 <h1 className="websiteHeader">React Photo Viewer</h1>
                 <PhotoViewer/>
-                <Link to="/otherpage" className={"myButton"}/>
-                <Clicker onClick={() => ClickHandler}
+                <ReactGA.OutboundLink to="/otherpage" className={"myButton"}/>
+                <Clicker
                 />
                 <button
                     type="button"
                     className="myButton"
-                    onClick={() => ClickHandler}
-                    onClick={() => navigate("/otherpage")}
+                    onClick={() => {
+                        ClickHandlerEvent();
+                        navigate("/otherpage");
+                }}
 
                 >Navigate using navigate</button>
             </div>

@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59f5230d-f2ec-44a4-b2f6-5f4a35a58881" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/photoapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/photoapp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Clicker/Clicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clicker/Clicker.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Homepage/Homepage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Homepage/Homepage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Page2/TestPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Page2/TestPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1643893689761</updated>
       <workItem from="1643893691744" duration="7214000" />
-      <workItem from="1643976663591" duration="8640000" />
+      <workItem from="1643976663591" duration="16251000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1643894573237</created>
@@ -80,5 +86,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/App.js</url>
+          <line>9</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
