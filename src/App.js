@@ -10,7 +10,7 @@ import ReactGA from 'react-ga';
 function usePageViews() {
     let location = useLocation();
     useEffect(() => {
-        ReactGA.initialize('UA-219300525-2');
+        // ReactGA.initialize('UA-219300525-2');
         // ReactGA.set({ page: location.pathname });
         // ReactGA.pageview(location.pathname);
         ReactGA.pageview(window.location.pathname + window.location.search);
@@ -23,9 +23,9 @@ function App() {
     // ReactGA.initialize('UA-219300525-2');
 
 
-    // useEffect(() => {
-    //     hotjar.initialize(2813391, 6);
-    // }, []);
+    useEffect(() => {
+        hotjar.initialize(2813391, 6);
+    }, []);
 
     usePageViews();
 
