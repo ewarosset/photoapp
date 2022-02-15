@@ -8,13 +8,13 @@ import TestPage from "./Pages/Page2/TestPage";
 import ReactGA from 'react-ga';
 
 
-function usePageViews() {
-    const location = useLocation();
-    useEffect(() => {
-        ReactGA.initialize('UA-219300525-2');
-        ReactGA.pageview(location.pathname + location.search);
-    }, [location]);
-}
+// function usePageViews() {
+//     const location = useLocation();
+//     useEffect(() => {
+//         ReactGA.initialize('UA-219300525-2');
+//         ReactGA.pageview(location.pathname + location.search);
+//     }, [location]);
+// }
 
 function App() {
 
