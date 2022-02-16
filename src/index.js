@@ -36,9 +36,9 @@ ReactDOM.render(
   <React.StrictMode>
       <HelmetProvider>
           <Helmet>
-              {/*<script type="text/javascript" charSet="UTF-8"*/}
-              {/*        src="//cdn.cookie-script.com/s/734d039edba9d0ec7bfa6cf3e7f8d521.js">*/}
-              {/*</script>*/}
+              <script type="text/javascript" charSet="UTF-8"
+                      src="//cdn.cookie-script.com/s/734d039edba9d0ec7bfa6cf3e7f8d521.js">
+              </script>
               {/*<script type="text/javascript"*/}
               {/*        src="https://cdn-ukwest.onetrust.com/consent/b0af53b9-1706-4de5-8bf1-301b24cbabc4/OtAutoBlock.js"></script>*/}
               {/*<script src="https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js" type="text/javascript"*/}
